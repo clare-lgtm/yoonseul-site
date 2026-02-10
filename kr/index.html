@@ -80,7 +80,7 @@
 </p>
 </div>
 </nav>
-<section class="@container">
+<section class="px-4 py-12 @container" id="home">
 <div class="@[480px]:p-4">
 <div class="flex min-h-[580px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:rounded-xl items-start justify-end px-6 pb-20 @[480px]:px-10" style='background-image: linear-gradient(rgba(17, 33, 30, 0.4) 0%, rgba(17, 33, 30, 0.9) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAdseFJX3nqcjl1vNidM3AkpzFKrsA8C5eHbf_7ouWXzK6zqNqQ2TM0V1Dw-t_w358t3acN9MeSASj7eDAoIHebfq1XFbKHEejeb2WB3h3ULAwhF84SWC1jzqgkmTaBwo73K4VE_ijvQJfS916EZLF7H1ajnhProewULmi4HRfUv_9nLXjmdsIHO_2z9triHlDCQ23qX6ruP6IyRTaBzPy3K1zMbWLEEaXPCA6ZPRpeBuiZeCDwqYlI9Z5UDLiqTvu7q4LPkyccjRmW");'>
 <div class="flex flex-col gap-5 text-left max-w-2xl">
@@ -97,7 +97,7 @@
 </div>
 </div>
 </section>
-<section class="py-12 px-6">
+<section class="py-10 bg-white/50 dark:bg-white/5 border-y border-gray-100 dark:border-gray-800" id="about">
 <h2 class="text-[#0e1b19] dark:text-white text-[24px] font-bold leading-tight tracking-[-0.015em] mb-6 font-display">About</h2>
 <div class="kr-body">
 <div class="text-[#0e1b19] dark:text-gray-300 text-[17px] leading-[1.8]">
@@ -153,10 +153,13 @@
 <p class="text-[#0e1b19] dark:text-gray-300 text-base leading-relaxed kr-body">
                 YOONSEUL INTERNATIONAL의 비즈니스 전략과 실행 역량을 확인해보세요.
             </p>
-<a class="inline-flex min-w-[180px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-[#0e1b19] dark:bg-primary text-white dark:text-[#0e1b19] text-sm font-bold tracking-wider transition-transform active:scale-95 kr-body" href="/kr/business.html">
+<a class="inline-flex items-center justify-center rounded-lg h-12 px-8 bg-[#0e1b19] dark:bg-primary text-white dark:text-[#0e1b19] text-base font-bold tracking-tight hover:opacity-90 transition-all"
+  href="/kr/business.html">
+  비즈니스 보기
+</a>
 </div>
 </section>
-<section class="py-16 px-6">
+<section class="py-16 px-4 bg-[#0e1b19] text-white rounded-t-3xl" id="contact">
 <h2 class="text-[#0e1b19] dark:text-white text-[24px] font-bold leading-tight tracking-[-0.015em] mb-8 font-display">Contact</h2>
 <div class="space-y-8">
 <div>
@@ -175,20 +178,27 @@
 <footer class="p-10 pb-24 text-center">
 <p class="text-[10px] text-gray-400 font-medium tracking-widest uppercase font-display">© 2024 YOONSEUL INTERNATIONAL. All rights reserved.</p>
 </footer>
-<nav class="fixed bottom-0 left-0 right-0 z-[60] bg-white/95 dark:bg-background-dark/95 backdrop-blur-xl border-t border-gray-100 dark:border-gray-800 px-4 py-4 flex justify-around items-center">
-<a class="flex flex-col items-center gap-1 group" href="#">
-<span class="text-[10px] font-bold uppercase tracking-widest text-primary font-display">HOME</span>
-</a>
-<a class="flex flex-col items-center gap-1 group" href="#">
-<span class="text-[10px] font-bold uppercase tracking-widest text-gray-400 group-active:text-primary font-display">ABOUT</span>
-</a>
-<a class="flex flex-col items-center gap-1 group" href="#">
-<span class="text-[10px] font-bold uppercase tracking-widest text-gray-400 group-active:text-primary font-display">BUSINESS</span>
-</a>
-<a class="flex flex-col items-center gap-1 group" href="#">
-<span class="text-[10px] font-bold uppercase tracking-widest text-gray-400 group-active:text-primary font-display">CONTACT</span>
-</a>
-</nav>
-</div>
+<nav class="fixed bottom-0 left-0 right-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-lg border-t border-gray-200 dark:border-gray-800">
+  <div class="flex justify-around items-center h-16 max-w-screen-md mx-auto">
+    <a class="flex flex-col items-center gap-1 text-primary" href="#home">
+      <span class="material-symbols-outlined text-2xl">home</span>
+      <span class="text-[10px] font-bold uppercase tracking-wider">HOME</span>
+    </a>
 
+    <a class="flex flex-col items-center gap-1 text-gray-400 dark:text-gray-500 hover:text-primary transition-colors" href="#about">
+      <span class="material-symbols-outlined text-2xl">info</span>
+      <span class="text-[10px] font-bold uppercase tracking-wider">ABOUT</span>
+    </a>
+
+    <a class="flex flex-col items-center gap-1 text-gray-400 dark:text-gray-500 hover:text-primary transition-colors" href="/kr/business.html">
+      <span class="material-symbols-outlined text-2xl">business_center</span>
+      <span class="text-[10px] font-bold uppercase tracking-wider">BUSINESS</span>
+    </a>
+
+    <a class="flex flex-col items-center gap-1 text-gray-400 dark:text-gray-500 hover:text-primary transition-colors" href="#contact">
+      <span class="material-symbols-outlined text-2xl">mail</span>
+      <span class="text-[10px] font-bold uppercase tracking-wider">CONTACT</span>
+    </a>
+  </div>
+</nav>
 </body></html>
